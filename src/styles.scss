@@ -1,0 +1,89 @@
+a {
+  color: green;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
+header.primary {
+  display: flex;
+
+  .branding {
+    flex: 1;
+    font-size: 2rem;
+  }
+
+  nav {
+    display: flex;
+  }
+  .navlink {
+    display: block;
+    padding: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.content-wrapper {
+  margin: auto;
+  width: 1000px;
+}
+
+.info-section {
+  border-top: 2px solid #eeeeee;
+  margin-top: 20px;
+}
+
+.region-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.region-card {
+  border: 3px #ccc solid;
+  border-radius: 20px;
+  display: flex;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  width: 46%;
+
+  .region-title-block{
+    flex: 1;
+    margin: 0;
+  }
+
+  .region-name {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+.region-link {
+  border-left: 5px transparent solid;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    background: #eeeeee;
+  }
+
+  &.active {
+    background: #000000;
+    border-left-color: green;
+    color: #ffffff;
+  }
+}
